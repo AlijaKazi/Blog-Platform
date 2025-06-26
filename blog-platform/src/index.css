@@ -1,0 +1,110 @@
+/* index.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Landing Page */
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #BB86FC;
+}
+
+.landing-content {
+  text-align: center;
+  color: white;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background-color: #BB86FC;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #7542b3;
+}
+
+/* Home Page */
+.home-container {
+  padding: 40px;
+  background-color: white;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.blog-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-card-content h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.read-more {
+  margin-top: 10px;
+  color: #BB86FC;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #BB86FC;
+  padding: 15px 30px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.navbar .logo {
+  font-size: 1.8em;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #7542b3;
+}

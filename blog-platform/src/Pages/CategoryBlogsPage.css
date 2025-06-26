@@ -1,0 +1,51 @@
+.category-blogs-container {
+  padding: 40px;
+}
+
+.heading-container {
+  color: #1d383b;
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+p{
+  font-size: 25px;
+  color: #2a4646;
+}
+.blogs-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between blog cards */
+}
+
+.category-blog-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  width: 80%;            /* Reduce width */
+  height: 220px;         /* Increase height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align content nicely */
+  border-left: 6px solid #46b69fc2;
+  margin: auto;          /* Center within grid cell */
+}
+
+
+.category-blog-card:hover {
+  background-color: #c0c4c5; /* Change background on hover */
+}
+
+.blog-title {
+  font-size: 1.5em; /* Adjust title size */
+  margin: 0; /* Remove default margin */
+  color:#3e4444;
+}
+
+.blog-author {
+  font-size: 1.2em; /* Adjust author name size */
+  color: #253232; /* Change color for better visibility */
+  margin-top: 5px; /* Space above the author name */
+}

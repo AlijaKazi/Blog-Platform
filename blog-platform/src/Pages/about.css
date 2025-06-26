@@ -1,0 +1,139 @@
+.about-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #43dabb;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-blog {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 12px 20px;
+  margin: 6px 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: black;
+  background-color: hsl(183, 27%, 49%);
+}
+
+.main-content-about {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px;
+  background-color: #f9fafb;
+  overflow-y: auto;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1400px;
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  color: #374151;
+}
+
+
+
+/* Headings and text */
+.page-title-about {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.about-paragraph {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.about-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-list li {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.about-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 3rem;
+}
+
+.highlight {
+  color: #43dabb;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .about-container {
+    padding: 0 1rem;
+  }
+}

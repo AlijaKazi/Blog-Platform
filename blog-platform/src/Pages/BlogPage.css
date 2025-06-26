@@ -1,0 +1,79 @@
+body {
+  font-family: 'Patrick Hand', cursive;
+  margin: 0;
+  padding: 0;
+  background-color: #FFF; /* White background for the full page */
+  color: #333; /* Darker text for readability on white */
+}
+
+/* Centered full-screen layout for loading/error */
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Blog Page Wrapper */
+.blog-page-wrapper {
+  min-height: 100vh;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #FFF; /* Ensure wrapper also stays white */
+}
+
+/* Blog Title */
+.blogtitle {
+  text-align: center;
+  font-size: clamp(3rem, 7vw, 3rem);
+  color: #43dabca8; /* Dark text for contrast */
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Blog Meta Info */
+.blog-meta {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Blog Container */
+.blog-container {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Blog Content Box */
+.blog-content {
+  background-color: #FFF; /* White background */
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+  max-width: 100%;
+  margin: auto;
+  border: 1px solid #e0e0e0;
+}
+
+/* Paragraph Content */
+.blog-para {
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.8;
+  white-space: pre-line;
+}
