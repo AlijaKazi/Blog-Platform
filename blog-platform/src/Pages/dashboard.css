@@ -1,0 +1,274 @@
+/* Core Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+  background: #f4f6f9;
+  color: #2e3a59;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #1f98a3;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.logo-blog {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: inherit;
+  text-align: left;
+  padding: 12px 18px;
+  margin: 6px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+/* Main Panel */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem 3rem;
+  position: relative;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Profile Hover */
+.user-info-badge {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  width: 42px;
+  height: 42px;
+  background-color: #1f98a3;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.user-info-badge:hover .user-icon {
+  background-color: #14757e;
+}
+
+.user-details-hover {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  background-color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  min-width: 190px;
+  z-index: 100;
+}
+
+.user-info-badge:hover .user-details-hover {
+  display: flex;
+}
+
+/* Dashboard Info */
+.dashboard-info {
+  margin: 1rem auto 3rem auto;
+  text-align: center;
+  max-width: 700px;
+}
+
+.dashboard-info p {
+  font-size: 1.4rem;
+  color: #4d586f;
+  margin-bottom: 1rem;
+}
+
+.write-blog-button {
+  background-color: #1f98a3;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.write-blog-button:hover {
+  background-color: #15767f;
+}
+
+/* Blog Form */
+.blog-form {
+  background: white;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-form h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+  color: #34495e;
+}
+
+.blog-form select,
+.blog-form input,
+.blog-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.blog-form select:focus,
+.blog-form input:focus,
+.blog-form textarea:focus {
+  outline: none;
+  border-color: #1f98a3;
+}
+
+/* Buttons */
+.submit-button,
+.toggle-button {
+  background-color: #1f98a3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover,
+.toggle-button:hover {
+  background-color: #14757e;
+}
+
+/* Blog Cards */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.blog-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #1f98a3;
+  transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.01);
+}
+
+.blog-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.blog-header small {
+  color: #7f8c8d;
+}
+
+/* Blog Actions */
+.blog-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.edit-button,
+.delete-button {
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.edit-button {
+  border-color: #1f98a3;
+  color: #1f98a3;
+}
+
+.edit-button:hover {
+  background-color: #1f98a3;
+  color: white;
+}
+
+.delete-button {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+  color: white;
+}
+
+/* Blog Count */
+.blog-count {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Scrollbar */
+.main-content::-webkit-scrollbar {
+  width: 8px;
+}
+.main-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 6px;
+}
