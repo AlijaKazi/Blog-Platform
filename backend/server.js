@@ -7,6 +7,11 @@ const dotenv = require('dotenv');
 const authRoutes = require('./routes/auth');
 const blogRoutes = require('./routes/blog');  // Add this line
 
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:5001',
+  'https://blog-platform-3-hjxf.onrender.com'  // ← your actual frontend URL
+];
 dotenv.config();
 
 const app = express();
