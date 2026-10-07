@@ -35,7 +35,7 @@ function SignUp() {
   return (
     <div className="signup-container">
       <div className="signup-image">
-        <img src="src/assets/categories/Humans.png" alt="Sign up" />
+        <img src="https://readymadeui.com/signin-image.webp" alt="Sign up" />
       </div>
       <div className="signup-form">
         <h2>Create Your Account</h2>
