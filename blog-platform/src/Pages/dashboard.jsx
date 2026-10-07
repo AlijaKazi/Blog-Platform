@@ -9,7 +9,7 @@ const DashboardPage = () => {
   const [newContent, setNewContent] = useState("");
   const [blogType, setBlogType] = useState("blog-type");
   const [editBlogId, setEditBlogId] = useState(null);
-  const [showBlogs, setShowBlogs] = useState(false);
+  const [showBlogs, setShowBlogs] = useState(true);
   const [showForm, setShowForm] = useState(false);
 
   const navigate = useNavigate();

@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import TravelImg from "../assets/categories/Travel.jpg";
-import FoodImg from "../assets/categories/Food.jpg";
-import BusinessImg from "../assets/categories/Business.jpg";
-import PersonalImg from "../assets/categories/Personal.jpg";
-import NewsImg from "../assets/categories/News.jpg";
-import LifestyleImg from "../assets/categories/Lifestyle.jpg";
+const TravelImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWKePeRSQaWeOcpSEjA15lQZ_ACsPWjLlWi2F6uUMsQ&s=10";
+const FoodImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVJNTpMZ8SyX5chUSzZsaq79bicemVuYKn2sTV39ZGPw&s=10";
+const PersonalImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw9pHl7fkXTOzFq02BRz8KoUEtMTxIokQ9V7P96GxeVQ&s";
+const BusinessImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6csP4_HAXyN2GqdmY_vGBzT-KQtcJ-594EtQY1N7e5Q&s=10";
+const NewsImg = "https://i.cbc.ca/ais/1.4428580,1686928374000/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C5000%2C2812%29%3B";
+const LifestyleImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEAeIJEel0MLoR_aUvc9dwKPzSFNe4MmjGHDqtWTSag&s=10";
 import "./ExploreBlogsPage.css";
 
 const ExploreBlogsPage = () => {
